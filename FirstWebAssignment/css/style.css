@@ -1,0 +1,83 @@
+.main {
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 75px auto 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.header {
+    grid-row: 1;
+    text-align: center;
+    width: 100%;
+    color: rebeccapurple;
+}
+
+.table-header {
+    border-top: 2px solid rebeccapurple;
+    font-size: 1.4rem;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.book-row {
+    border-top: 2px solid rebeccapurple;
+    font-size: 1.1rem;
+    justify-items: center;
+}
+
+.table-header, .book-row {
+    display: flex;
+    height: 40px;
+}
+
+.table-header div, .book-row div {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.book-num {
+    flex-basis: 10%;
+    border-left: 2px solid rebeccapurple;
+}
+
+.book-title, .author {
+    flex-basis: 45%;
+    border-right: 2px solid rebeccapurple;
+}
+
+.book-title {
+    border-left: 2px solid rebeccapurple;
+}
+
+.page-numbers {
+    border-top: 2px solid rebeccapurple;
+    grid-row: 3;
+}
+
+#page-number-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-number {
+    display: inline;
+    border: 1px solid black;
+    padding: 4px;
+    font-size: 1.5rem;
+}
+
+.page-number:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.page-highlight {
+    background-color: rebeccapurple;
+    color: white;
+}
